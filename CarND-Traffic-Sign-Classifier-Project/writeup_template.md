@@ -24,12 +24,9 @@ The goals / steps of this project are the following:
 [image3]: ./my_images/hist_train.jpg "Histogram Train Dataset"
 [image4]: ./my_images/hist_valid.jpg "Histogram Valid Dataset"
 [image5]: ./my_images/hist_test.jpg "Histogram Test Dataset"
-[image6]: ./my_images/ConvNet.png "My signals"
-[image7]: ./my_images/my_signals.jpg "My signals"
+[image6]: ./my_images/ConvNet.png "ConvNet"
+[image7]: ./my_images/my_signals.jpg "My Signals"
 
-[image8]: ./examples/placeholder.png "Traffic Sign 3"
-[image9]: ./examples/placeholder.png "Traffic Sign 4"
-[image10]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -61,12 +58,15 @@ Here is an exploratory visualization of the data set. It is a histogram chart sh
 It is obvious from the data set that the distribution is skewed with limited samples for class ids >= 13. This could result in significant inaccuracies when testing against signs in that range.
 
 Training Dataset Distribution
+
 ![alt text][image3]
 
 Validation Dataset Distribution
+
 ![alt text][image4]
 
 Test Dataset Distribution
+
 ![alt text][image5]
 
 
@@ -78,10 +78,13 @@ Test Dataset Distribution
 As a first step, I decided to convert the images to grayscale because it would improve perfomance. The performance improvement could be attributed to reduction in number of channels in the original image from 3 to 1.
 
 Here is an example of a traffic sign image before and after grayscaling.
+
 Original Image
+
 ![alt text][image1]
 
 Grayscale converted Image
+
 ![alt text][image2]
 
 It should be noted that the improvement in performance was not noticable and conversion to grayscale was dropped due to some accuracy loss.
