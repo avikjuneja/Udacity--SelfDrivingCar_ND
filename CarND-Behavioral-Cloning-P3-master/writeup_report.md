@@ -31,7 +31,7 @@ The goals / steps of this project are the following:
 [image10]: ./examples/recover_2_2.jpg "Recovery Image"
 [image11]: ./examples/recover_2_3.jpg "Recovery Image"
 
-[image13]: ./examples/center_lap.png "Normal Image"
+[image13]: ./examples/center_lap.jpg "Normal Image"
 [image14]: ./examples/center_flipped.jpg "Flipped Image"
 [image15]: ./examples/center_cropped.jpg "Cropped"
 
@@ -151,6 +151,7 @@ Right Side Recovery:
 ![alt text][image7]
 
 Left side recovery:
+
 ![alt text][image8]
 ![alt text][image9]
 ![alt text][image10]
