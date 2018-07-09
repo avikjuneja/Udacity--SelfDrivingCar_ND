@@ -193,11 +193,12 @@ Here's a [link to my video result](./project_out.mp4)
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 There are few things that were not taken into account and need to be understood as to how they can be incorporated:
-    1. The example output image (./examples/example_output.jpg) shows the lane colored region to include the hood of the car. However, my submission was not accepted with comments to exclude the hood. This was not mentioned in the specification. I am re-submitting to exclude the hood. 
-    2. The non-linear shape of the hood of the car could be removed from the warp transform, but that further leads to ignoring some crucial segments of the lane lines. One possible solution would be to include the hood while 'warping' but somehow exclude when drawing the lane area. 
+
+    1. The example output image (./examples/example_output.jpg) shows the lane colored region to include the hood of the car. However, my submission was not accepted with comments to exclude the hood. This was not mentioned in the specification. I am re-submitting to exclude the hood.     
+    2. The non-linear shape of the hood of the car could be removed from the warp transform, but that further leads to ignoring some crucial segments of the lane lines. One possible solution would be to include the hood while 'warping' but somehow exclude when drawing the lane area.    
     3. This code hasn't been tested on following scenarios:
-        a. An object or another vehile right in front of the car (inside the lane)
-        b. Shorter view of the lanes ahead (smaller than assummed lane depth. One way to tackle this would be to adopt to the depth of the lane visible in front, instead of assumming a fixed field of view for the lanes. This is of challenge particularly in the harder_challenge.mp4
-    4.  cv2.getPerspectiveTransform(src,dst) doesnt seem to accept polygons with more than four points. This is further required to ignore some areas like the hood of the car.
+        a. An object or another vehile right in front of the car (inside the lane)        
+        b. Shorter view of the lanes ahead (smaller than assummed lane depth. One way to tackle this would be to adopt to the depth of the lane visible in front, instead of assumming a fixed field of view for the lanes. This is of challenge particularly in the harder_challenge.mp4        
+    4.  cv2.getPerspectiveTransform(src,dst) doesnt seem to accept polygons with more than four points. This is further required to ignore some areas like the hood of the car.    
     5. The code hasn't been tested in other light conditions. e.g. night time, blaring sun with scattered rays.
 
